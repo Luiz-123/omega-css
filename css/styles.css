@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    font-size: 14px;
+    color: #fff;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.left, .right {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+}
+
+.left {
+    background: #232323;
+}
+
+.right {
+    background: #454444;
+    left: 50%;
+}
+
+ion-icon {
+    font-size: 25px;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 95%;
+    padding: 0 30px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.navbar>div {
+    padding: 0 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0 auto 0 38%;
+    font-size: 23px;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    gap: 0.5em;
+}
+
+.product-img {
+    width: 500px;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    animation: fly 4s ease-in-out infinite;
+}
+
+@keyframes fly {
+    0% {
+        transform: translate(-50%,-46%);
+    }
+    50% {
+        transform: translate(-50%,-54%);
+    }
+    100% {
+        transform: translate(-50%,-46%);
+    }
+}
+
+.left-text {
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.left-title {
+    font-size: 130px;
+    letter-spacing: -10px;
+    color: #454444;
+    line-height: 0.8;
+}
+
+.left-title::after {
+    content: ".";
+    color: #454444;
+}
+
+.left-subtitle {
+    padding: 15px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+.right-title {
+    position: fixed;
+    font-size: 62px;
+    position: absolute;
+    top: 276px;
+    left: 820px;
+    text-transform: uppercase;
+}
+
+.right-title .button {
+    position: relative;
+    top: -27%;
+    right: -70px;
+    font-size: 16px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 10px 40px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.slider {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.pages {
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.pages span::after {
+    content: " ";
+    display: inline-block;
+    border: 0.5px solid #fff;
+    width: 100px;
+    margin: 0 10px;
+    transform: translateY(-4px);
+}
+
+.arrows {
+    padding: 0 20px;
+}
+
+.arrows ion-icons {
+    font-size: 30px;
+    padding: 0 20px;
+}
+
+.media ul {
+    list-style: none;
+    position: fixed;
+    right: 41px;
+    top: 40%;
+    padding: 10px 10px;
+}
+
+.media ul li {
+    color: #232323;
+    font-size: 18px;
+    margin: 24px 0;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.media ul li:hover {
+    color: #fff;
+}
